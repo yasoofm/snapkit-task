@@ -10,9 +10,10 @@
 		FCB873A12B8E0C2B001FAF92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB873A02B8E0C2B001FAF92 /* AppDelegate.swift */; };
 		FCB873A32B8E0C2B001FAF92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB873A22B8E0C2B001FAF92 /* SceneDelegate.swift */; };
 		FCB873A52B8E0C2B001FAF92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB873A42B8E0C2B001FAF92 /* ViewController.swift */; };
-		FCB873A82B8E0C2B001FAF92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCB873A62B8E0C2B001FAF92 /* Main.storyboard */; };
 		FCB873AA2B8E0C2B001FAF92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCB873A92B8E0C2B001FAF92 /* Assets.xcassets */; };
 		FCB873AD2B8E0C2B001FAF92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCB873AB2B8E0C2B001FAF92 /* LaunchScreen.storyboard */; };
+		FCB873B62B8E0C69001FAF92 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FCB873B52B8E0C69001FAF92 /* SnapKit */; };
+		FCB873B82B8E0C69001FAF92 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = FCB873B72B8E0C69001FAF92 /* SnapKit-Dynamic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +21,6 @@
 		FCB873A02B8E0C2B001FAF92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCB873A22B8E0C2B001FAF92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FCB873A42B8E0C2B001FAF92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FCB873A72B8E0C2B001FAF92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FCB873A92B8E0C2B001FAF92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCB873AC2B8E0C2B001FAF92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCB873AE2B8E0C2B001FAF92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,6 +31,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCB873B62B8E0C69001FAF92 /* SnapKit in Frameworks */,
+				FCB873B82B8E0C69001FAF92 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +61,6 @@
 				FCB873A02B8E0C2B001FAF92 /* AppDelegate.swift */,
 				FCB873A22B8E0C2B001FAF92 /* SceneDelegate.swift */,
 				FCB873A42B8E0C2B001FAF92 /* ViewController.swift */,
-				FCB873A62B8E0C2B001FAF92 /* Main.storyboard */,
 				FCB873A92B8E0C2B001FAF92 /* Assets.xcassets */,
 				FCB873AB2B8E0C2B001FAF92 /* LaunchScreen.storyboard */,
 				FCB873AE2B8E0C2B001FAF92 /* Info.plist */,
@@ -83,6 +84,10 @@
 			dependencies = (
 			);
 			name = ThreadApp;
+			packageProductDependencies = (
+				FCB873B52B8E0C69001FAF92 /* SnapKit */,
+				FCB873B72B8E0C69001FAF92 /* SnapKit-Dynamic */,
+			);
 			productName = ThreadApp;
 			productReference = FCB8739D2B8E0C2B001FAF92 /* ThreadApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = FCB873942B8E0C2A001FAF92;
+			packageReferences = (
+				FCB873B42B8E0C69001FAF92 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = FCB8739E2B8E0C2B001FAF92 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +135,6 @@
 			files = (
 				FCB873AD2B8E0C2B001FAF92 /* LaunchScreen.storyboard in Resources */,
 				FCB873AA2B8E0C2B001FAF92 /* Assets.xcassets in Resources */,
-				FCB873A82B8E0C2B001FAF92 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,14 +154,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FCB873A62B8E0C2B001FAF92 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FCB873A72B8E0C2B001FAF92 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FCB873AB2B8E0C2B001FAF92 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,7 +295,6 @@
 				INFOPLIST_FILE = ThreadApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -306,9 +304,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.coded.ThreadApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -323,7 +325,6 @@
 				INFOPLIST_FILE = ThreadApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -333,9 +334,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.coded.ThreadApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -361,6 +366,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FCB873B42B8E0C69001FAF92 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FCB873B52B8E0C69001FAF92 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FCB873B42B8E0C69001FAF92 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		FCB873B72B8E0C69001FAF92 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FCB873B42B8E0C69001FAF92 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FCB873952B8E0C2A001FAF92 /* Project object */;
 }
